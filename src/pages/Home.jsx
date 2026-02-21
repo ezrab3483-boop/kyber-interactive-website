@@ -8,7 +8,7 @@ function Home() {
 
     return (
         <div className="home-page">
-            <h1>Welcome to Kyber Interactive</h1>
+            <center><h1>Welcome to Kyber Interactive</h1></center>
         </div>
     )
 }
