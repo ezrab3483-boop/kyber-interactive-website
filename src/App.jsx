@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Layout from "./Layout";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const supportedLanguages = ["en-US", "fr-FR"];
+const supportedLanguages = ["en-US", "fr"];
 
 function detectBrowserLanguage() {
   const browserLang = navigator.language; // ex: "fr-FR", "en-GB"
@@ -15,7 +15,7 @@ function detectBrowserLanguage() {
   }
 
   // Fallback by language prefix
-  if (browserLang.startsWith("fr")) return "fr-FR";
+  if (browserLang.startsWith("fr")) return "fr";
 
   return "en-US"; // default fallback
 }

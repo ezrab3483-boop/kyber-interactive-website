@@ -2,7 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en-US.json";
-import fr from "./locales/fr-FR.json";
+import fr from "./locales/fr.json";
 
 
 i18n
@@ -10,7 +10,7 @@ i18n
 .init({
     resources: {
         "en-US": { translation: en },
-        "fr-FR": { translation: fr }
+        "fr": { translation: fr }
     },
     fallbackLng: "en-US",
     interpolation: {

@@ -2,7 +2,7 @@ import { Outlet, useParams, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const supportedLanguages = ["en-US", "fr-FR"];
+const supportedLanguages = ["en-US", "fr"];
 
 function Layout() {
   const { lang } = useParams();
