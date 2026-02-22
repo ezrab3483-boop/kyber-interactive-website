@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./css/Home.css";
 
+
 function Home() {
     const { t } = useTranslation();
 

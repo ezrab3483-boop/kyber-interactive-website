@@ -2,5 +2,16 @@
   "home": {
     "title": "Home - Kyber Interactive",
     "welcome": "Welcome to Kyber Interactive"
+  },
+  "nav": {
+    "home": "Home",
+    "creation": "Creation",
+    "support": "Support",
+    "account": "Account",
+    "settings": "Settings",
+    "signin": "Sign In",
+    "redeem": "Redeem",
+    "createAccount": "Create Account",
+    "login": "Login"
   }
 }

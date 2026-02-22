@@ -2,5 +2,12 @@
   "home": {
     "title": "Accueil - Kyber Interactive",
     "welcome": "Bienvenue chez Kyber Interactive"
+  },
+
+  "nav": {
+    "account": "Compte",
+    "support": "Soutien"
   }
+
+
 }

@@ -1,0 +1,154 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* ---------------- Navbar ---------------- */
+.main-navbar {
+  background: linear-gradient(to bottom, #0a0e14, #000000);
+  border-bottom: 1px solid #1a1a1a;
+  height: 62px;
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 1030;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.65);
+}
+
+.main-navbar .container-fluid {
+  height: 100%;
+  align-items: center;
+}
+
+/* ---------------- Brand ---------------- */
+.brand {
+  color: #fff !important;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 0;
+}
+
+.brand-logo {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.brand:hover {
+  color: #ffffff !important;
+}
+
+/* ---------------- Nav items & buttons ---------------- */
+.nav-item,
+.support-btn {
+  color: #d0d0d0 !important;
+  font-size: 0.97rem;
+  font-weight: 500;
+  padding: 0.55rem 0.50rem !important;
+  margin: 0 0.35rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  transition: all 0.18s ease;
+}
+
+/* Only normal nav items get this hover */
+.nav-item:not(.dropdown-toggle):hover,
+.support-btn:hover {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* ---------------- Language Dropdown ---------------- */
+.language-dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #d0d0d0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: all 0.18s ease;
+}
+
+/* ---------------- Account Dropdown ---------------- */
+.account-dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #d0d0d0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: all 0.18s ease;
+}
+
+
+
+/* ---------------- Dropdown Menus ---------------- */
+.account-dropdown .dropdown-menu,
+.language-dropdown .dropdown-menu {
+  background-color: #0f0f0f !important;
+  border: 1px solid #222;
+  border-radius: 6px;
+  margin-top: 10px;
+  min-width: 180px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.75);
+}
+
+.account-dropdown .dropdown-item,
+.language-dropdown .dropdown-item {
+  color: #e0e0e0;
+  padding: 0.6rem 1.4rem;
+}
+
+.account-dropdown .dropdown-item:hover,
+.language-dropdown .dropdown-item:hover {
+  background-color: rgba(0, 174, 239, 0.2) !important;
+  color: #00aeef !important;
+}
+
+.account-dropdown .dropdown-divider {
+  border-top: 1px solid #222;
+}
+
+/* ---------------- Login / Create buttons ---------------- */
+.login-btn,
+.create-account {
+  display: block;
+  width: calc(100% - 1rem);
+  margin: 0.25rem auto !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  background-color: #007acc;
+  color: #fff !important;
+  transition: all 0.2s ease;
+}
+
+.login-btn:hover,
+.create-account:hover {
+  background-color: #0090ff;
+  color: #fff !important;
+}
+
+/* ---------------- Icons ---------------- */
+.bi {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+/* ---------------- Mobile adjustments ---------------- */
+@media (max-width: 991px) {
+  .right-buttons {
+    margin-top: 1rem;
+  }
+  .nav-item,
+  .support-btn,
+  .account-dropdown .dropdown-toggle,
+  .language-dropdown .dropdown-toggle {
+    justify-content: center;
+    margin: 0.6rem 0;
+  }
+}
+
+.language-dropdown .dropdown-toggle::after {
+  display: none; /* hides the default arrow */
+}

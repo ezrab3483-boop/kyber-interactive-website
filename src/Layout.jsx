@@ -1,6 +1,7 @@
 import { Outlet, useParams, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import Header from "./pages/components/Header";
 
 const supportedLanguages = ["en-US", "fr"];
 
@@ -17,7 +18,12 @@ function Layout() {
     i18n.changeLanguage(lang);
   }, [lang]);
 
-  return <Outlet />;
+  return (
+    <div>
+        <Header />
+        <Outlet />
+    </div>
+  );
 }
 
 export default Layout;
