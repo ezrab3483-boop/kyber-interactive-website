@@ -1,16 +1,21 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import "./css/Home.css";
 
 function Home() {
+    const { t } = useTranslation();
+
     useEffect(() => {
-        document.title = "Home - Kyber Interactive";
-    }, []);
+        document.title = t("home.title");
+    }, [t]);
 
     return (
         <div className="home-page">
-            <center><h1>Welcome to Kyber Interactive</h1></center>
+            <center>
+                <h1>{t("home.welcome")}</h1>
+            </center>
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;
