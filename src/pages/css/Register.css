@@ -1,0 +1,229 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #15171E;
+  color: #fff;
+  padding: 1rem; /* mobile spacing */
+}
+
+
+.register-logo {
+  max-width: 100px; /* max width of the image */
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto; /* center horizontally with bottom margin */
+  display: flex;
+}
+
+
+.dob-card {
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.back-link {
+  color: #888;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+.dob-description {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs container */
+.dob-inputs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap; /* stack on small screens */
+}
+
+/* All inputs styling */
+.dob-inputs select,
+.dob-inputs input[type="number"] {
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  border: 2px solid #555;
+  background-color: #15171E;
+  color: #fff;
+  font-size: 0.9rem;
+  appearance: none;
+  box-sizing: border-box;
+  min-width: 140px;
+}
+
+/* Country select full width */
+.dob-inputs select:first-child {
+  flex: 1 1 100%;
+  min-width: 420px;
+}
+
+/* Day, Month, Year layout */
+.dob-inputs select:nth-child(1),
+.dob-inputs select:nth-child(2),
+.dob-inputs input[type="number"] {
+  flex: 1 1 30%;
+  min-width: 80px;
+}
+
+/* Stack inputs on small screens */
+@media (max-width: 360px) {
+  .dob-inputs select,
+  .dob-inputs input[type="number"] {
+    flex: 1 1 100%;
+  }
+}
+
+/* Red border if invalid */
+.dob-inputs select.invalid,
+.dob-inputs input.invalid {
+  border-color: #d9534f;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s;
+}
+
+
+.next-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #235FE3;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s;
+}
+
+.next-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #343647;
+}
+
+.continue-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.continue-btn:not(:disabled):hover {
+  background-color: #0af;
+}
+
+.register-footer {
+  font-size: 0.8rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.register-footer a {
+  color: #0af;
+  text-decoration: none;
+}
+
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+.or-separator span {
+  padding: 0 0.75rem;
+  background-color: transparent; /* match card background */
+  z-index: 1;
+}
+
+.or-separator::before,
+.or-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #555; /* line color */
+}
+
+
+/* Add at the top or in register.css */
+.social-login-text {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #aaa;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Optional background colors to match brands */
+.social-btn.google { background-color: #fff; border: 1px solid #ccc; }
+.social-btn.facebook { background-color: #1877f2; }
+.social-btn.apple { background-color: #ffffff; }
+.social-btn.steam { background-color: #000000; }
+.social-btn.xbox { background-color: #107c10; }
+.social-btn.playstation { background-color: #003791; }
+
+
+.DateofBirthTitle {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

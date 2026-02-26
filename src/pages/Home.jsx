@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./css/Home.css";
 
+import Header from "./components/Header";
+
 
 function Home() {
     const { t } = useTranslation();
@@ -11,7 +13,9 @@ function Home() {
     }, [t]);
 
     return (
-        <div className="home-page">
+       
+       <div className="home-page">
+            <Header />
             <center>
                 <h1>{t("home.welcome")}</h1>
             </center>
