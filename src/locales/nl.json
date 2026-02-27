@@ -1,0 +1,34 @@
+{
+  "home": {
+    "title": "Home - Kyber Interactive",
+    "welcome": "Welcome to Kyber Interactive"
+  },
+  "nav": {
+    "home": "Home",
+    "creation": "Creation",
+    "support": "Support",
+    "account": "Account",
+    "settings": "Settings",
+    "signin": "Sign In",
+    "redeem": "Redeem",
+    "createAccount": "Create Account",
+    "login": "Login"
+  },
+  "register": {
+    "title": "Register - Kyber Interactive",
+    "back": "Rug",
+    "createKyberAccount": "Maak uw Kyber Interactive account aan.",
+    "description": "Dit is bedoeld om ervoor te zorgen dat je, ongeacht je leeftijd, een veilige en leuke ervaring hebt.",
+    "continue": "Doorgaan",
+    "next": "Volgende",
+    "alreadyAccount": "Heb je al een account?",
+    "signIn": "Log in",
+    "privacyPolicy": "Privacybeleid",
+    "orSignInWith": "Maak een account aan via een externe dienst of begin helemaal opnieuw.",
+    "dateofbirthtitle": "GEBOORTEDATUM",
+    "countryregion": "LAND/REGIO",
+    "day": "Dag",
+    "month": "Maand",
+    "year": "Jaar"
+  }
+}

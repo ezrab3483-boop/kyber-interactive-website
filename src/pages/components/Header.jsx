@@ -109,22 +109,6 @@ function Header() {
               <NavDropdown.Item as={Link} to={`/${lang}/redeem`}>
                 <i className="bi bi-grid-3x3-gap me-2"></i> {t("nav.redeem") || "Redeem Code"}
               </NavDropdown.Item>
-
-              {!isLoggedIn ? (
-                <>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item as={Link} to={`/${lang}/create-account`} className="create-account">
-                    <i className="bi bi-pencil me-2"></i> {t("nav.createAccount") || "Create Account"}
-                  </NavDropdown.Item>
-                </>
-              ) : (
-                <>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item as={Link} to={`/${lang}/logout`}>
-                    {t("nav.logout") || "Log Out"}
-                  </NavDropdown.Item>
-                </>
-              )}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

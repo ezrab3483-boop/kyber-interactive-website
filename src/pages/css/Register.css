@@ -6,15 +6,15 @@
   min-width: 100vw;
   background-color: #15171E;
   color: #fff;
-  padding: 1rem; /* mobile spacing */
+  padding: 1rem;
 }
 
 
 .register-logo {
-  max-width: 100px; /* max width of the image */
+  max-width: 100px;
   width: 100%;
   height: auto;
-  margin: 0 auto 20px auto; /* center horizontally with bottom margin */
+  margin: 0 auto 20px auto;
   display: flex;
 }
 
@@ -45,15 +45,13 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-/* Inputs container */
 .dob-inputs {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
-  flex-wrap: wrap; /* stack on small screens */
+  flex-wrap: wrap;
 }
 
-/* All inputs styling */
 .dob-inputs select,
 .dob-inputs input[type="number"] {
   padding: 0.6rem 0.75rem;
@@ -67,13 +65,11 @@ h2 {
   min-width: 140px;
 }
 
-/* Country select full width */
 .dob-inputs select:first-child {
   flex: 1 1 100%;
   min-width: 420px;
 }
 
-/* Day, Month, Year layout */
 .dob-inputs select:nth-child(1),
 .dob-inputs select:nth-child(2),
 .dob-inputs input[type="number"] {
@@ -81,7 +77,6 @@ h2 {
   min-width: 80px;
 }
 
-/* Stack inputs on small screens */
 @media (max-width: 360px) {
   .dob-inputs select,
   .dob-inputs input[type="number"] {
@@ -89,7 +84,6 @@ h2 {
   }
 }
 
-/* Red border if invalid */
 .dob-inputs select.invalid,
 .dob-inputs input.invalid {
   border-color: #d9534f;
@@ -163,7 +157,7 @@ h2 {
 
 .or-separator span {
   padding: 0 0.75rem;
-  background-color: transparent; /* match card background */
+  background-color: transparent;
   z-index: 1;
 }
 
@@ -172,11 +166,10 @@ h2 {
   content: "";
   flex: 1;
   height: 1px;
-  background: #555; /* line color */
+  background: #555;
 }
 
 
-/* Add at the top or in register.css */
 .social-login-text {
   text-align: center;
   margin-bottom: 0.5rem;
@@ -213,7 +206,6 @@ h2 {
   height: 24px;
 }
 
-/* Optional background colors to match brands */
 .social-btn.google { background-color: #fff; border: 1px solid #ccc; }
 .social-btn.facebook { background-color: #1877f2; }
 .social-btn.apple { background-color: #ffffff; }

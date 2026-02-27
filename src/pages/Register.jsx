@@ -94,7 +94,7 @@ function Register() {
 
         <div className="dob-inputs">
           <select value={country} onChange={e => setCountry(e.target.value)} className={inputClass(country)}>
-            <option value="">Country / Region</option>
+            <option value="">{t("register.countryregion") || "COUNTRY/REGION"}</option>
             {countries.map((c, i) => <option key={i} value={c}>{c}</option>)}
           </select>
         </div>
@@ -109,15 +109,15 @@ function Register() {
 
         <div className="dob-inputs">
           <select value={day} onChange={e => setDay(e.target.value)} className={inputClass(day)}>
-            <option value="">Day</option>
+            <option value="">{t("register.day") || "Dag"}</option>
             {[...Array(31)].map((_, i) => <option key={i+1} value={i+1}>{i+1}</option>)}
           </select>
           <select value={month} onChange={e => setMonth(e.target.value)} className={inputClass(month)}>
-            <option value="">Month</option>
+            <option value="">{t("register.month") || "Maand"}</option>
             {months.map((m, i) => <option key={i} value={m}>{m}</option>)}
           </select>
           <select value={year} onChange={e => setYear(e.target.value)} className={inputClass(year)}>
-            <option value="">Year</option>
+            <option value="">{t("register.year") || "Jaar"}</option>
             {years.map((y) => <option key={y} value={y}>{y}</option>)}
           </select>
         </div>

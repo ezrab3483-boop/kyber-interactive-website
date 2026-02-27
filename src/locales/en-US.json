@@ -26,6 +26,9 @@
     "privacyPolicy": "Privacy Policy",
     "orSignInWith": "Create an account via a third-party service, or start from scratch",
     "dateofbirthtitle": "DATE OF BIRTH",
-    "countryregion": "COUNTRY/REGION"
+    "countryregion": "COUNTRY/REGION",
+    "day": "Day",
+    "month": "Month",
+    "year": "Year"
   }
 }
